@@ -33,8 +33,13 @@ void Halfurmetri()
 	SensorValue[rightEncoder] = 0;
 	SensorValue[leftEncoder] = 0;
 
+
 	while(SensorValue[leftEncoder] < 500)  // While less than 5 rotations on the leftEncoder... 320 hringur
 		{
+			if(vexRT[Btn8U] == 1)
+			{
+				StopAllTasks();
+			}
 	  	if(SensorValue[rightEncoder] == SensorValue[leftEncoder]) // If rightEncoder has counted the same amount as leftEncoder:
 			{
 				// Move Forward
@@ -58,6 +63,11 @@ void Halfurmetri()
 
 task main()
 {
+
+
+
+
+
 	Halfurmetri();
 
 	wait1Msec(200);
@@ -83,8 +93,6 @@ task main()
   wait1Msec(850);
 
   Halfurmetri();
-
-
 
 
 }
