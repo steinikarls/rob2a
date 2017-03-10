@@ -17,3 +17,6 @@ https://youtu.be/JwT7JtuqfM8
 
 Verkefni 5
 https://youtu.be/y3TG2qcMQ4Q
+
+Verkefni 6
+https://youtu.be/tSsofVLM4pU
