@@ -59,10 +59,7 @@ task main ()
 		{
 			motor[clawMotor] = 0;    		//...stop the gripper.
 		}
-			if(vexRT[Btn8U] == 1)
-		{
-			StopAllTasks();
-		}
+
 	}
 }
 
